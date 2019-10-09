@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .top-horizontal-bar{
+            
+            width: 98.5%;
+            height: 60px;
+            padding: 10px;
+            position: relative;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+        .search-div{
+            position: relative;
+            float: right;
+            margin-top: 10px;
+            margin-right: 150px;
+        }
+        #search-box{
+            height: 40px;
+            width: 400px;
+            border-radius: 4px;
+            border: 1px solid #B1B1B1;
+            font-family: Open Sans;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            padding-left: 30px;
+            
+        }
+        .search-icon{
+            position: absolute;
+            top: 12px;
+            left: 10px;
+            padding: 10px; 
+            min-width: 50px; 
+            background: url('images/shapesearch.png') no-repeat;
+            background-size: contain;
+            z-index: 1;
+        }
+        .horizontal-icons{
+            position: relative;
+            float: right;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .horizontal-icons a{
+            padding: 20px;
+            border-right: 1px solid #B1B1B1;
+        }
+        .horizontal-icons .last_a{
+            margin-left: 10px;
+            border:1px solid black;
+        }
+        .horizontal-icons a img{
+            height: 15px;
+        }
+        .top-horizontal-bar .profile{
+            width: 40px;
+            height: 40px;
+            margin-top: 10px;
+            border:1px solid black;
+            float: right;
+            border-radius: 50%;
+            margin-right: 30px;
+        }
+        .top-horizontal-bar .profile p{
+            line-height: 13px;
+            font-family: 'Open Sans';
+        }
+        @media (max-width: 767px) {
+            .top-horizontal-bar{
+                width: 96%;
+            }
+            /* .search-div, .horizontal-icons, .top-horizontal-bar .profile{
+                float: none;
+            } */
+            .search-div{
+                position: absolute;
+            }
+            .top-horizontal-bar .profile{
+                display: inline-block;
+            }
+            
+            #search-box{
+                height: 40px;
+                width: 200px;
+                border-radius: 4px;
+                border: 1px solid #B1B1B1;
+                font-family: Open Sans;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                padding-left: 30px;
+                
+            }
+        }
+        @media (max-width: 991px) and (min-width: 768px){
+            .top-horizontal-bar{
+                width: 97.5%;
+            }
+            .search-div{
+                position: absolute;
+            }
+            
+            
+        }
+        @media (max-width: 1199px) and (min-width: 992px) {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="top-horizontal-bar">
+        <div class="profile">
+           <p> <b>AU</b></p>
+        </div>
+        <div class="horizontal-icons">
+            <a href=""><img src="images/help.png" alt=""></a>
+            <a href=""><img src="images/alarm-clock.png" alt=""></a>
+            <a href=""><img src="images/notification (1).png" alt=""></a> 
+                     
+        </div>
+
+        <div class="search-div">
+            <i class="search-icon"> </i>
+            <input type="search" name="" id="search-box" placeholder="search">
+            
+        </div>
+    </div>
+</body>
+</html>
