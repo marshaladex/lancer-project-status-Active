@@ -50,7 +50,7 @@
             left: 10px;
             padding: 10px; 
             min-width: 50px; 
-            background: url('images/shapesearch.png') no-repeat;
+            background: url('https://res.cloudinary.com/young-einstein/image/upload/v1570671702/Shapesearch_rqnboo.png') no-repeat;
             background-size: contain;
             z-index: 1;
         }
@@ -201,6 +201,19 @@
           cursor: pointer;
           outline: none;
         }
+        /* buttong plus sign */
+        .plus-sign{
+            border:1px solid #0ABAB5;
+            border-radius: 100%;
+            width: 3.5%;
+            background-color: #0ABAB5;
+            color: white;
+            margin-top: 20%;
+            text-align: center;
+            box-shadow: 0 5px 5px gray;
+        }
+        /* sidenav code refuses to hide */
+        /* .sidenav {display:none;} */
 
         /* On mouse-over */
         a:hover, .dropdown-btn:hover {
@@ -226,17 +239,24 @@
         @media (max-width: 1199px) and (min-width: 992px) {
             
         }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+            
+        }
+        
     </style>
 </head>
 <body>
+    
     <div class="top-horizontal-bar">
         <div class="profile">
            <p> <b>AU</b></p>
         </div>
         <div class="horizontal-icons">
-            <a href=""><img src="images/help.png" alt=""></a>
-            <a href=""><img src="images/alarm-clock.png" alt=""></a>
-            <a href=""><img src="images/notification (1).png" alt=""></a> 
+            <a href=""><img src="https://res.cloudinary.com/kngkay/image/upload/v1570701036/kngkay/help.png" alt=""></a>
+            <a href=""><img src="https://res.cloudinary.com/kngkay/image/upload/v1570701037/kngkay/alarm-clock.png" alt=""></a>
+            <a href=""><img src="https://res.cloudinary.com/kngkay/image/upload/v1570701036/kngkay/notification_1.png" alt=""></a> 
                      
         </div>
 
@@ -309,7 +329,12 @@
                         </tr>               
                     </table> 
                 </div>
-    </div>
+
+                <div>
+                    <button class="plus-sign">+</button>
+                </div>
+    
+</div>
         <script>
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
